@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.Interfaces", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.Tests", "CRUDContacts.Tests\CRUDContacts.Tests.csproj", "{ADCBE500-6214-4ED4-9852-F269B4E83FDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.API", "CRUDContacts.API\CRUDContacts.API.csproj", "{2E53799A-BD55-4239-9782-4734A9695FEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{ADCBE500-6214-4ED4-9852-F269B4E83FDA}.Release|x64.Build.0 = Release|Any CPU
 		{ADCBE500-6214-4ED4-9852-F269B4E83FDA}.Release|x86.ActiveCfg = Release|Any CPU
 		{ADCBE500-6214-4ED4-9852-F269B4E83FDA}.Release|x86.Build.0 = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|x64.Build.0 = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x64.ActiveCfg = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x64.Build.0 = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
