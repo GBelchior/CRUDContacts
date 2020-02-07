@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace CRUDContacts.Core
 {
-    public class CoreBase<T> where T : ModelBase
+    public abstract class CoreBase<T> where T : ModelBase
     {
         protected IRepositoryBase<T> repository;
 

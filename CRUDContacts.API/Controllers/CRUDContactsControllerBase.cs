@@ -7,7 +7,7 @@ namespace CRUDContacts.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CRUDContactsControllerBase<T> : ControllerBase where T : ModelBase
+    public abstract class CRUDContactsControllerBase<T> : ControllerBase where T : ModelBase
     {
         private ICoreBase<T> core;
 

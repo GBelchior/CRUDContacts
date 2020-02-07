@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CRUDContacts.Data
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : ModelBase
+    public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : ModelBase
     {
         protected CRUDContactsContext context;
         protected DbSet<T> dbSet;
