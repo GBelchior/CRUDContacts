@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CRUDContacts.Models\CRUDContacts.Models.csproj" />
+    <ProjectReference Include="..\CRUDContacts.Interfaces\CRUDContacts.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

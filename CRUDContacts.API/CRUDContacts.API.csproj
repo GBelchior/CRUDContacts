@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CRUDContacts.Data\CRUDContacts.Data.csproj" />
+    <ProjectReference Include="..\CRUDContacts.Interfaces\CRUDContacts.Interfaces.csproj" />
+    <ProjectReference Include="..\CRUDContacts.Core\CRUDContacts.Core.csproj" />
   </ItemGroup>
 
 </Project>

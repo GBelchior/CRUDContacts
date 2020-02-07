@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.Tests", "CRUDC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.API", "CRUDContacts.API\CRUDContacts.API.csproj", "{2E53799A-BD55-4239-9782-4734A9695FEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDContacts.Core", "CRUDContacts.Core\CRUDContacts.Core.csproj", "{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x64.Build.0 = Release|Any CPU
 		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x86.ActiveCfg = Release|Any CPU
 		{2E53799A-BD55-4239-9782-4734A9695FEF}.Release|x86.Build.0 = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|x64.Build.0 = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Debug|x86.Build.0 = Debug|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|x64.ActiveCfg = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|x64.Build.0 = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|x86.ActiveCfg = Release|Any CPU
+		{6FA32AA6-28E3-458A-B1FC-D5DB532FEEED}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

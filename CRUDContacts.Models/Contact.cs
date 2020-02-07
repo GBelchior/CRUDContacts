@@ -2,9 +2,8 @@
 
 namespace CRUDContacts.Models
 {
-    public class Contact
+    public class Contact : ModelBase
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
         public Gender Gender { get; set; }
