@@ -125,5 +125,68 @@ namespace CRUDContacts.Tests
             Assert.AreEqual(newContact.Gender, createdContact.Gender);
         }
         #endregion
+
+        #region Edit
+        [TestMethod]
+        public void Edit_InvalidItem_IsResponseBadRequest()
+        {
+            ContactController controller = GetController();
+            IActionResult result = controller.Edit(0, null);
+            Assert.IsInstanceOfType(result, typeof(BadRequestResult));
+        }
+
+        [TestMethod]
+        public void Edit_ValidItem_IsResponseNoContent()
+        {
+            ContactController controller = GetController();
+            OkObjectResult getResult = controller.Get(1) as OkObjectResult;
+            Contact contact = getResult.Value as Contact;
+
+            IActionResult result = controller.Edit(contact.Id, contact);
+            Assert.IsInstanceOfType(result, typeof(NoContentResult));
+        }
+
+        [TestMethod]
+        public void Edit_ValidItem_IsItemEdited()
+        {
+            ContactController controller = GetController();
+            OkObjectResult getResult = controller.Get(1) as OkObjectResult;
+            Contact contact = getResult.Value as Contact;
+            contact.Name = "Arnaldo";
+
+            controller.Edit(contact.Id, contact);
+
+            OkObjectResult getEditedResult = controller.Get(1) as OkObjectResult;
+            Contact editedContact = getResult.Value as Contact;
+            Assert.AreEqual(contact.Name, editedContact.Name);
+        }
+        #endregion
+
+        #region Delete
+        [TestMethod]
+        public void Delete_InvalidItem_IsResponseNotFound()
+        {
+            ContactController controller = GetController();
+            IActionResult result = controller.Delete(99);
+            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+        }
+
+        [TestMethod]
+        public void Delete_ValidItem_IsResponseNoContent()
+        {
+            ContactController controller = GetController();
+            IActionResult result = controller.Delete(3);
+            Assert.IsInstanceOfType(result, typeof(NoContentResult));
+        }
+
+        [TestMethod]
+        public void Delete_ValidItem_IsItemDeleted()
+        {
+            ContactController controller = GetController();
+            controller.Delete(3);
+            IActionResult result = controller.Get(3);
+            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+        }
+        #endregion
     }
 }
