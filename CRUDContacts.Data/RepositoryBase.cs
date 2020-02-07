@@ -13,8 +13,9 @@ namespace CRUDContacts.Data
         protected CRUDContactsContext context;
         protected DbSet<T> dbSet;
 
-        public RepositoryBase()
+        public RepositoryBase(CRUDContactsContext context)
         {
+            this.context = context;
             dbSet = context.Set<T>();
         }
 

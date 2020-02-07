@@ -5,6 +5,6 @@ namespace CRUDContacts.Core
 {
     public class ContactCore : CoreBase<Contact>, IContactCore
     {
-        public ContactCore(IRepositoryBase<Contact> repository) : base(repository) { }
+        public ContactCore(IContactRepository repository) : base(repository) { }
     }
 }

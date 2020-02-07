@@ -24,7 +24,7 @@ namespace CRUDContacts.API.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(int id)
         {
             T model = core.Read(c => c.Id == id).FirstOrDefault();
@@ -46,7 +46,9 @@ namespace CRUDContacts.API.Controllers
             }
 
             core.Create(model);
-            return CreatedAtRoute("Get", model.Id);
+            core.Save();
+
+            return CreatedAtRoute("Get", new { id = model.Id }, model);
         }
 
         // PUT api/values/5
@@ -58,13 +60,14 @@ namespace CRUDContacts.API.Controllers
                 return BadRequest();
             }
 
-            T dbModel = core.Read(c => c.Id == id).FirstOrDefault();
-            if (dbModel == null)
+            if (!core.Exists(id))
             {
                 return NotFound();
             }
 
             core.Edit(model);
+            core.Save();
+
             return NoContent();
         }
 
@@ -78,6 +81,8 @@ namespace CRUDContacts.API.Controllers
             }
 
             core.Delete(id);
+            core.Save();
+
             return NoContent();
         }
     }
